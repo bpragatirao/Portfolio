@@ -28,7 +28,7 @@ I am a Software Engineer with **2 years of industry experience** in architecting
 
 ## 💼 Work Experience (2 Years)
 ### System Developer / Automation Engineer
-- **BPM & RPA:** Developed robust automation workflows using **PEGA** and **UiPath**, reducing manual processing time by [X]%.
+- **BPM & RPA:** Developed robust automation workflows using **PEGA** and **UiPath**, reducing manual processing time.
 - **Conversational AI:** Integrated **Kore.ai** and **Search.ai** to build responsive, generative AI-driven interfaces for enterprise clients.
 - **System Architecture:** Designed and implemented scalable web components and backend logic.
 
@@ -46,9 +46,6 @@ I am a Software Engineer with **2 years of industry experience** in architecting
 ## 📊 Performance & Coding Stats
 | [LeetCode Solutions 📂](https://github.com/bpragatirao/Leetcode-Archive) |
 | :--- |
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bpragatirao&show_icons=true&theme=tokyonight)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bpragatirao&layout=compact&theme=tokyonight)
 
 ---
 
