@@ -1,9 +1,78 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Projects</h2>
+<section class="projects-hero">
+    <div class="projects-container">
 
-<div class="card">
+        <h1 class="projects-title">
+            Work that <span>Solves Problems</span>, Builds Models, and Drives Insights
+        </h1>
+
+        <p class="projects-subtitle">
+            A curated selection of machine learning, data science, and analytics projects
+            focused on real-world impact.
+        </p>
+
+        <div class="projects-grid">
+
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <img src="{{ url_for('static', filename='images/project1.png') }}" alt="Project 1">
+                <div class="project-content">
+                    <h3>AI Finance Dashboard</h3>
+                    <p>
+                        End-to-end financial analytics system using Python, ML models,
+                        and interactive dashboards.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>ML</span>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="{{ url_for('static', filename='images/project2.png') }}" alt="Project 2">
+                <div class="project-content">
+                    <h3>Customer Churn Prediction</h3>
+                    <p>
+                        Predictive modeling using XGBoost and SHAP for explainability
+                        on telecom datasets.
+                    </p>
+                    <div class="project-tags">
+                        <span>Machine Learning</span>
+                        <span>XGBoost</span>
+                        <span>SHAP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <img src="{{ url_for('static', filename='images/project3.png') }}" alt="Project 3">
+                <div class="project-content">
+                    <h3>Smart Resume Analyzer</h3>
+                    <p>
+                        NLP-based system that ranks resumes using cosine similarity
+                        and semantic embeddings.
+                    </p>
+                    <div class="project-tags">
+                        <span>NLP</span>
+                        <span>Python</span>
+                        <span>Flask</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+<!-- <div class="card">
     <h3>Eco Retail Platform</h3>
     <p>Full-stack Python project with analytics dashboard.</p>
 </div>
@@ -11,5 +80,5 @@
 <div class="card">
     <h3>Student Management System</h3>
     <p>CRUD application using Python and SQLite.</p>
-</div>
-{% endblock %}
+</div> -->
+

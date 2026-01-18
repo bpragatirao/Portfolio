@@ -36,7 +36,7 @@
 
         <p class="footer-text">
             Commercial use requires prior written permission.
-            <a href="#">Projects</a> and availability subject to academic schedule. This site may contain links to live deployments.
+            <a href="{{ url_for('projects') }}">Projects</a> and availability subject to academic schedule. This site may contain links to live deployments.
         </p>
 
         <p class="footer-text">
@@ -44,13 +44,13 @@
         </p>
 
         <div class="footer-links">
-            <a href="#">HIRE ME</a>
+            <a href="{{ url_for('contact') }}">HIRE ME</a>
             <span>|</span>
             <a href="{{ url_for('static', filename='assets/Resume_PragatiRao.pdf') }}" target="_blank" rel="noopener noreferrer">VIEW RESUME</a>
             <span>|</span>
             <a href="{{ url_for('projects') }}">PROJECTS</a>
             <span>|</span>
-            <a href="#">LINKEDIN</a>
+            <a href="https://www.linkedin.com/in/pragati-rao-bammidi">LINKEDIN</a>
         </div>
 
         <p class="footer-version">Version v1.1.0</p>
