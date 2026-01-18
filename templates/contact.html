@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="contact-section">
+    <div class="contact-container">
+
+        <!-- LEFT PANEL -->
+        <div class="contact-info">
+            <h1>You Have Questions,<br>I Have Answers</h1>
+
+            <p class="subtitle">
+                Interested in data science projects, internships, research,
+                or collaboration opportunities? Let us connect.
+            </p>
+
+            <div class="info-block">
+                <h3>Location</h3>
+                <p>Bangalore, India</p>
+                <p>Available for Remote Roles</p>
+            </div>
+
+            <div class="info-block">
+                <h3>Email</h3>
+                <p>bpragatirao@gmail.com</p>
+                <p>bammidipragatirao.252cd005@nitk.edu.in</p>
+            </div>
+
+            <div class="info-block">
+                <h3>Social</h3>
+                <p>LinkedIn</p>
+                <p>GitHub</p>
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="contact-form">
+            <h2>Tell Me What You Need</h2>
+            <p class="form-subtitle">
+                I will get back to you as soon as possible.
+            </p>
+
+            <form method="POST" action="/contact">
+                <div class="row">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                </div>
+
+                <div class="row">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" name="organization" placeholder="Organization (Optional)">
+                </div>
+
+                <input type="text" name="topic" placeholder="Inquiry Topic">
+
+                <div class="inquiry">
+                    <label>Type of Inquiry</label>
+                    <div class="tags">
+                        <span>Internship</span>
+                        <span>Project</span>
+                        <span>Research</span>
+                        <span>Freelance</span>
+                        <span>Other</span>
+                    </div>
+                </div>
+
+                <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">
+                        I agree to be contacted regarding this inquiry
+                    </label>
+                </div>                
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

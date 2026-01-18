@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<nav class="navbar-wrapper">
+    <div class="navbar">
+        <div class="nav-logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">Portfolio</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <p class="footer-text">
+            <b>© 2026 Bammidi Pragati Rao. All rights reserved.</b> Designed and developed by an M.Tech Data Science scholar at National Institute of Technology (NIT) Surathkal Karnataka. The code and case studies on this portfolio may be viewed, forked, or referenced for educational purposes, provided proper attribution is given to the author. 
+        </p>
+
+        <p class="footer-text">
+            Commercial use requires prior written permission.
+            <a href="#">Projects</a> and availability subject to academic schedule. This site may contain links to live deployments.
+        </p>
+
+        <p class="footer-text">
+            This site may contain links to live deployments.
+        </p>
+
+        <div class="footer-links">
+            <a href="#">HIRE ME</a>
+            <span>|</span>
+            <a href="{{ url_for('static', filename='assets/Resume_PragatiRao.pdf') }}" target="_blank" rel="noopener noreferrer">VIEW RESUME</a>
+            <span>|</span>
+            <a href="{{ url_for('projects') }}">PROJECTS</a>
+            <span>|</span>
+            <a href="#">LINKEDIN</a>
+        </div>
+
+        <p class="footer-version">Version v1.1.0</p>
+    </div>
+</footer>
+
+</body>
+</html>

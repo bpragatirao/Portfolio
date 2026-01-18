@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <div class="about-container">
+
+        <!-- LEFT PANEL -->
+        <div class="about-left">
+            <div class="profile-card">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Photo">
+                <h2>About Me</h2>
+                <p class="highlight">
+                    I analyze data, build intelligent models, and turn insights into impact.
+                </p>
+                <p class="description">
+                    I am a Data Science student with strong interests in machine learning,
+                    data analytics, and applied AI. I enjoy working on real-world datasets,
+                    building predictive models, and creating meaningful visualizations.
+                </p>
+            </div>
+
+            <div class="skills">
+                <h3>My Skills</h3>
+                <div class="skill-icons">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Scikit-learn</span>
+                    <span>SQL</span>
+                    <span>React-js</span>
+                    <span>PEGA</span>
+                    <span>UiPath</span>
+                    <span>Kore.ai</span>
+                    <span>Search.ai</span>
+                    <span>Matplotlib</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="about-right">
+            <h3>Featured Work</h3>
+
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4>Customer Churn Prediction</h4>
+                    <p>Built ML models to predict churn using real telecom data.</p>
+                    <span>Machine Learning</span>
+                </div>
+
+                <div class="project-card">
+                    <h4>Retail Sales Analysis</h4>
+                    <p>Exploratory data analysis and dashboards for business insights.</p>
+                    <span>Data Analytics</span>
+                </div>
+
+                <div class="project-card">
+                    <h4>Sentiment Analysis</h4>
+                    <p>NLP-based sentiment classifier using social media data.</p>
+                    <span>NLP</span>
+                </div>
+
+                <div class="project-card">
+                    <h4>Sentiment Analysis</h4>
+                    <p>NLP-based sentiment classifier using social media data.</p>
+                    <span>NLP</span>
+                </div>
+
+                <div class="project-card">
+                    <h4>Sentiment Analysis</h4>
+                    <p>NLP-based sentiment classifier using social media data.</p>
+                    <span>NLP</span>
+                </div>
+
+                <div class="project-card">
+                    <h4>Sentiment Analysis</h4>
+                    <p>NLP-based sentiment classifier using social media data.</p>
+                    <span>NLP</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

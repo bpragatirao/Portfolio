@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <!-- <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile">
+    <h1>Hello, I'm <span>Bammidi Pragati Rao</span></h1>
+    <p>Software Developer | Mtech CDS NITK | Data Scientist Aspirant | Ex System Engineer TCS</p> -->
+
+    <div class="hero-content">
+        <span class="hero-greeting">Hi there, I am</span>
+        <h1 class="hero-name">Bammidi Pragati Rao</h1>
+        <h2 class="hero-role">Data Science Student, NITK</h2>
+
+        <p class="hero-desc">
+            Passionate about data-driven problem solving, machine learning,
+            and building scalable analytical solutions.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="{{ url_for('contact') }}" class="btn-primary">Contact Me</a>
+            <a href="{{ url_for('static', filename='assets/Resume_PragatiRao.pdf') }}" download="BammidiPragatiRao_Resume.pdf" class="btn-outline">Download CV</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile">
+    </div>
+</section>
+
+<!-- QUOTE SECTION -->
+<section class="quote-section">
+    <p>
+        “I enjoy the process of solving problems with a
+        clean and scalable solution by transforming raw data into meaningful insights and building
+        intelligent systems that create real-world impact.”
+    </p>
+</section>
+
+<!-- CTA PROJECT SECTION -->
+<section class="cta-card">
+    <div class="cta-content">
+        <h2>Have a project in mind?</h2>
+        <p>
+            Let us collaborate on data science projects, research work,
+            internships, or analytics-driven solutions.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="{{ url_for('contact') }}" class="btn-primary">Contact Me</a>
+            <a href="{{ url_for('static', filename='assets/Resume_PragatiRao.pdf') }}" download="BammidiPragatiRao_Resume.pdf" class="btn-outline">Download CV</a>
+        </div>
+    </div>
+
+    <div class="cta-image">
+        <img src="{{ url_for('static', filename='images/profile-alt.jpg') }}" alt="Thinking pose">
+    </div>
+</section>
+
+{% endblock %}
